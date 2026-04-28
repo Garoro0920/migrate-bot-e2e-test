@@ -1,8 +1,13 @@
 import Link from "next/link";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Next.js + TypeScript Example",
+};
 
 const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
+  <Layout>
     <h1>About</h1>
     <p>This is the about page</p>
     <p>
